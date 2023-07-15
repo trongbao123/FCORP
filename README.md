@@ -45,7 +45,7 @@
    }
    ```
 
-5. Run Server
+5. Run api-sever
 
    - Step 1: Open terminal at the directory you just cloned the project and type cmd:
      > cd api-server.
@@ -58,7 +58,7 @@
 
      > http://localhost:3000/books
 
-6. Run Vue.js
+6. Run vue-app
 
    - Step 1: Open terminal at the directory you just cloned the project and type cmd:
      > cd vue-app.
