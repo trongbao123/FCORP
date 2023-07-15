@@ -45,7 +45,7 @@
    }
    ```
 
-5. Run api-sever
+5. Run api-server
 
    - Step 1: Open terminal at the directory you just cloned the project and type cmd:
      > cd api-server.
