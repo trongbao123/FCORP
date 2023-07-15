@@ -1,0 +1,42 @@
+.details {
+  text-align: center;
+  text-transform: none;
+  font-family: IrvinText, IrvinHeadingPro, Georgia, "Times New Roman", Times, serif;
+  line-break: auto;
+  line-height: 1.33333em;
+  font-weight: 400;
+  color: rgb(219, 51, 52);
+  margin-top: 70px;
+}
+
+.title-content {
+  font-family: serif;
+  line-height: 1.06667em;
+  font-size: 60px;
+  font-weight: 400;
+  font-style: oblique;
+}
+
+.details-content {
+  text-align: center;
+  font-family: serif;
+  font-weight: 500;
+  color: #846542;
+  font-style: italic;
+  font-size: 28px;
+  border: solid 1px #846542;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+  border: solid 1px #846542;
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

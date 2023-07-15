@@ -1,0 +1,113 @@
+.comment-Form {
+  width: 70%;
+  background-color: #d3d4d4;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 50px 0px 20px 160px;
+}
+
+.avatar {
+  width: 35px;
+  line-height: 35px;
+  height: 35px;
+  background-color: #3e3737;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 20px;
+  font-family: serif;
+  color: azure;
+  font-weight: 700;
+}
+
+.title-form {
+  display: flex;
+}
+
+.day {
+  padding: 5px 24px;
+  font-size: 17px;
+  font-family: serif;
+  color: #000;
+  font-weight: 600;
+}
+
+.comment {
+  padding-left: 60px;
+  font-size: 20px;
+  font-family: serif;
+  color: #000;
+  font-weight: 700;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+.comment-flex {
+  display: flex;
+  color: #000;
+  padding: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.comment-flex > p {
+  padding-top: 7px;
+  font-weight: 600;
+  font-family: serif;
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+.comment-text {
+  width: 63%;
+  background-color: #d3d4d4;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0px 0px 10px 230px;
+  border: none;
+}
+
+.submit {
+  position: relative;
+  width: 5%;
+  height: 37px;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: serif;
+  font-size: 20px;
+  right: 73px;
+  top: 12px;
+}
+
+.form-comment {
+  display: flex;
+}
+
+.comment-edit {
+  width: 80%;
+  background-color: #d3d4d4;
+  border-radius: 10px;
+  padding-left: 20px;
+  margin-left: 40px;
+  border: none;
+  font-family: serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.comment-Form1 {
+  width: 65%;
+  background-color: #d3d4d4;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 30px 0px 20px 210px;
+}
+
+.reply {
+  margin: 30px 0px 20px 195px;
+}

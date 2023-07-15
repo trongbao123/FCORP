@@ -1,0 +1,42 @@
+[
+  {
+    "bookId": "2",
+    "id": 2,
+    "content": "oke",
+    "author": "George Orwell",
+    "PublishDate": "1949-06-08",
+    "replies": []
+  },
+  {
+    "bookId": "3",
+    "id": 3,
+    "content": "chán",
+    "author": "George Orwell",
+    "PublishDate": "1949-06-08",
+    "replies": []
+  },
+  {
+    "bookId": "4",
+    "id": 4,
+    "content": "pass pv đi bro",
+    "author": "George Orwell",
+    "PublishDate": "1949-06-08",
+    "replies": []
+  },
+  {
+    "bookId": "5",
+    "id": 5,
+    "content": "nhận em đi anh",
+    "author": "George Orwell",
+    "PublishDate": "1949-06-08",
+    "replies": []
+  },
+  {
+    "bookId": "6",
+    "id": 6,
+    "content": "quá tuyệt vời",
+    "author": "George Orwell",
+    "PublishDate": "1949-06-08",
+    "replies": []
+  }
+]
