@@ -3,16 +3,17 @@
 ###To compile Test app from source:
 
 1. You must download this project to your machine using the command:
-   git clone https://github.com/trongbao123/FCORP.git
+
+   > git clone https://github.com/trongbao123/FCORP.git
 
 2. To use the local api server, you need to download these files, if you already have one, skip this step:
 
-- [Dowload elasticsearch]: (https://www.elastic.co/fr/downloads/past-releases/elasticsearch-7-0-0)
-- [Dowload Kibana]: (https://www.elastic.co/fr/downloads/past-releases/kibana-7-0-0)
-- [Dowload java]: (https://www.oracle.com/java/technologies/downloads/)
+   > [Dowload elasticsearch]: (https://www.elastic.co/fr/downloads/past-releases/elasticsearch-7-0-0)
+   > [Dowload Kibana]: (https://www.elastic.co/fr/downloads/past-releases/kibana-7-0-0)
+   > [Dowload java]: (https://www.oracle.com/java/technologies/downloads/)
 
-  3. After downloading the above 3 files, proceed to extract them.
-  4. After successfully extracting the files, click on the elasticsearch file to run these are the steps to start elasticsearch:
+3. After downloading the above 3 files, proceed to extract them.
+4. After successfully extracting the files, click on the elasticsearch file to run these are the steps to start elasticsearch:
 
 ` Click on the Elasticsearch folder you just unzipped, find the file -> Elasticsearch-7.0.0 -> bin ->click->elasticsearch.batch-> wait for about 2-3 minutes to start.`
 
@@ -53,7 +54,7 @@
 
   > http://localhost:3000/books
 
-  6. Run Vue.js
+6. Run Vue.js
 
 - Step 1: Open terminal at the directory you just cloned the project and type cmd:
   > cd my-project.
