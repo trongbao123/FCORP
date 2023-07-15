@@ -1,5 +1,6 @@
 const { client } = require("../Setting/Db.config.js")
 const bookType = require("../types/bookTypes.js")
+const StatusCode = require("../util/http-status/http-status.js")
 
 // GET /books
 const GetBook = async (req, res) => {
@@ -12,9 +13,9 @@ const GetBook = async (req, res) => {
         }
       }
     })
-    res.status(200).send(body.hits.hits.map((hit) => hit))
+    res.status(StatusCode.OK).send(body.hits.hits.map((hit) => hit))
   } catch (error) {
-    res.status(500).send({ message: "server error", error: error.message })
+    res.status(StatusCode.INTERNAL_SERVER_ERROR).send({ statusCode: StatusCode.INTERNAL_SERVER_ERROR, message: error.message, success: false, result: undefined })
   }
 }
 
@@ -25,12 +26,12 @@ const GetBookDetails = async (req, res) => {
       index: bookType.bookType,
       id: req.params.id
     })
-    res.status(200).send({ message: "success", data: body._source })
+    res.status(StatusCode.OK).send({ message: "success", data: body._source })
   } catch (error) {
     if (error.statusCode === 404) {
-      res.status(404).send({ message: "fail", error: "Book not found" })
+      res.status(StatusCode.NOT_FOUND).send({ message: "fail", error: "Book not found" })
     } else {
-      res.status(500).send({ message: "server error", error: error.message })
+      res.status(StatusCode.INTERNAL_SERVER_ERROR).send({ message: "server error", error: error.message })
     }
   }
 }
@@ -51,9 +52,9 @@ const PostBook = async (req, res) => {
         price
       }
     })
-    res.status(201).send({ message: "success", data: body })
+    res.status(StatusCode.CREATED).send({ message: "success", data: body })
   } catch (error) {
-    res.status(500).send({ message: "server error", error: error.message })
+    res.status(StatusCode.INTERNAL_SERVER_ERROR).send({ message: "server error", error: error.message })
   }
 }
 
@@ -75,12 +76,12 @@ const UpdateBooks = async (req, res) => {
         }
       }
     })
-    res.status(200).send({ message: "success", data: body })
+    res.status(StatusCode.OK).send({ message: "success", data: body })
   } catch (error) {
     if (error.statusCode === 404) {
-      res.status(404).send({ message: "Book not found" })
+      res.status(StatusCode.NOT_FOUND).send({ message: "Book not found" })
     } else {
-      res.status(500).send({ message: "fail", error })
+      res.status(StatusCode.INTERNAL_SERVER_ERROR).send({ message: "fail", error })
     }
   }
 }
