@@ -58,7 +58,7 @@
 
       > http://localhost:3000/books
 
-6.  Run Vue.js
+### 6. Run Vue.js
 
     - Step 1: Open terminal at the directory you just cloned the project and type cmd:
       > cd my-project.
@@ -72,12 +72,11 @@
 
     ## Step 3:After downloading node_modules, enter the start command to run the server:
 
-        ```
+    ```
+    yarn install
 
-        yarn serve
+    ```
 
-        ```
+## Step 4: Once you've started it, you can check it out in your browser by typing:
 
-    ## Step 4: Once you've started it, you can check it out in your browser by typing:
-
-        > http://localhost:8080/
+       > http://localhost:8080/
