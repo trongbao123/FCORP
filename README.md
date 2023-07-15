@@ -8,9 +8,9 @@
 
 2. To use the local api server, you need to download these files, if you already have one, skip this step:
 
-   > [Dowload elasticsearch]: (https://www.elastic.co/fr/downloads/past-releases/elasticsearch-7-0-0)
-   > [Dowload Kibana]: (https://www.elastic.co/fr/downloads/past-releases/kibana-7-0-0)
-   > [Dowload java]: (https://www.oracle.com/java/technologies/downloads/)
+   > Dowload elasticsearch: https://www.elastic.co/fr/downloads/past-releases/elasticsearch-7-0-0
+   > Dowload Kibana: https://www.elastic.co/fr/downloads/past-releases/kibana-7-0-0
+   > Dowload java: https://www.oracle.com/java/technologies/downloads/
 
 3. After downloading the above 3 files, proceed to extract them.
 
