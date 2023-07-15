@@ -1,5 +1,7 @@
 const { Client } = require("@elastic/elasticsearch")
 const { DomainElecticSearch } = require("../util/setting")
-const DbConFig = new Client({ node: DomainElecticSearch })
+const client = new Client({ node: DomainElecticSearch })
 
-module.exports = DbConFig
+module.exports = {
+  client
+}

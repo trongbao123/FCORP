@@ -1,10 +1,11 @@
-const client = require("../DB/Db.config")
+const { client } = require("../Setting/Db.config.js")
+const bookType = require("../types/bookTypes.js")
 
 // GET /books
 const GetBook = async (req, res) => {
   try {
     const { body } = await client.search({
-      index: "books",
+      index: bookType.bookType,
       body: {
         query: {
           match_all: {}
@@ -21,7 +22,7 @@ const GetBook = async (req, res) => {
 const GetBookDetails = async (req, res) => {
   try {
     const { body } = await client.get({
-      index: "books",
+      index: bookType.bookType,
       id: req.params.id
     })
     res.status(200).send({ message: "success", data: body._source })
@@ -37,13 +38,15 @@ const GetBookDetails = async (req, res) => {
 // POST /books
 const PostBook = async (req, res) => {
   try {
-    const { title, author, publishedDate, description, price } = req.body
+    const { title, author, description, price } = req.body
+    const timestamp = Date.now().toString()
     const { body } = await client.index({
-      index: "books",
+      index: bookType.bookType,
       body: {
+        id: timestamp,
         title,
         author,
-        publishedDate,
+        publishedDate: timestamp,
         description,
         price
       }
@@ -57,11 +60,20 @@ const PostBook = async (req, res) => {
 // PUT /books/:id
 const UpdateBooks = async (req, res) => {
   try {
-    const { title, author, publishedDate, description, price } = req.body
+    const { title, author, description, price } = req.body
+    const timestamp = Date.now().toString()
     const { body } = await client.update({
-      index: "books",
+      index: bookType.bookType,
       id: req.params.id,
-      body: { doc: { title, author, publishedDate, description, price } }
+      body: {
+        doc: {
+          title,
+          author,
+          publishedDate: timestamp,
+          description,
+          price
+        }
+      }
     })
     res.status(200).send({ message: "success", data: body })
   } catch (error) {
