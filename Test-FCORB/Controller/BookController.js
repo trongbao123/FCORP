@@ -13,8 +13,7 @@ const GetBook = async (req, res) => {
     })
     res.status(200).send(body.hits.hits.map((hit) => hit))
   } catch (error) {
-    console.log(error)
-    res.status(500).send({ message: "fail", error: error.message })
+    res.status(500).send({ message: "server error", error: error.message })
   }
 }
 
@@ -30,7 +29,7 @@ const GetBookDetails = async (req, res) => {
     if (error.statusCode === 404) {
       res.status(404).send({ message: "fail", error: "Book not found" })
     } else {
-      res.status(500).send({ message: "fail", error: error.message })
+      res.status(500).send({ message: "server error", error: error.message })
     }
   }
 }
@@ -51,7 +50,7 @@ const PostBook = async (req, res) => {
     })
     res.status(201).send({ message: "success", data: body })
   } catch (error) {
-    res.status(500).send({ message: "fail", error: error.message })
+    res.status(500).send({ message: "server error", error: error.message })
   }
 }
 
