@@ -48,7 +48,7 @@
 5. Run Server
 
    - Step 1: Open terminal at the directory you just cloned the project and type cmd:
-     > cd Test-FCORB.
+     > cd api-server.
    - Step 2: At the Test-FCORB folder you download nnode_modules by typing the command:
      > npm install.
    - Step 3:After downloading node_modules, enter the start command to run the server:
@@ -61,7 +61,7 @@
 6. Run Vue.js
 
    - Step 1: Open terminal at the directory you just cloned the project and type cmd:
-     > cd my-project.
+     > cd vue-app.
    - Step 2: At the my-project folder you download nnode_modules by typing the command:
      > yarn install.
 
