@@ -8,9 +8,12 @@
 
 2. To use the local api server, you need to download these files, if you already have one, skip this step:
 
-   > Dowload elasticsearch: https://www.elastic.co/fr/downloads/past-releases/elasticsearch-7-0-0
-   > Dowload Kibana: https://www.elastic.co/fr/downloads/past-releases/kibana-7-0-0
-   > Dowload java: https://www.oracle.com/java/technologies/downloads/
+   - Dowload elasticsearch:
+     > https://www.elastic.co/fr/downloads/past-releases/elasticsearch-7-0-0
+   - Dowload Kibana:
+     > https://www.elastic.co/fr/downloads/past-releases/kibana-7-0-0
+   - Dowload java:
+     > https://www.oracle.com/java/technologies/downloads/
 
 3. After downloading the above 3 files, proceed to extract them.
 
@@ -53,7 +56,7 @@
 
    * Step 4: Once you've started it, you can check it out in your browser by typing:
 
-   > http://localhost:3000/books
+     > http://localhost:3000/books
 
 6. Run Vue.js
 
@@ -64,7 +67,7 @@
 
    * Step 3:After downloading node_modules, enter the start command to run the server:
 
-   > yarn serve
+     > yarn serve
 
    - Step 4: Once you've started it, you can check it out in your browser by typing:
      > http://localhost:8080/
