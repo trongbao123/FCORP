@@ -1,4 +1,5 @@
-import { v4 as uuidv4 } from "uuid"
+import { commentType } from "@/types/commentType/commentType"
+
 export const isAuthor = (currentUser, author) => currentUser === author
 
 export const saveComments = (propBook, Comment, Cancel, code) => {
@@ -16,38 +17,21 @@ export const saveComments = (propBook, Comment, Cancel, code) => {
 }
 
 export const addComment = (book, Comment, newComment) => {
-  const data = {
-    bookId: book.id,
-    id: uuidv4(),
-    author: "Bảo",
-    content: newComment,
-    PublishDate: new Date(),
-    replies: []
-  }
-
   if (book.id) {
-    Comment.push(data)
+    Comment.push(commentType(book, newComment))
   }
   saveComments(book, Comment)
+}
+
+export const addReplyComment = (params, newReplyContent, propBook, Comment) => {
+  params.replies.push(commentType(propBook, newReplyContent))
+  saveComments(propBook, Comment)
 }
 
 export const deleteComment = (comments, commentId, propBook) => {
   const index = comments.findIndex((comment) => comment.id === commentId)
   comments.splice(index, 1)
   saveComments(propBook, comments)
-}
-
-export const addReplyComment = (params, newReplyContent, propBook, Comment) => {
-  const newCommentOrReply = {
-    id: uuidv4(),
-    author: "Bảo",
-    content: newReplyContent,
-    editing: false,
-    PublishDate: new Date(),
-    replies: []
-  }
-  params.replies.push(newCommentOrReply)
-  saveComments(propBook, Comment)
 }
 
 export const deleteReply = (commentId, replyId, propBook, CommentArray) => {

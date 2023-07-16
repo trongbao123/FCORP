@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import { addComment } from "../../../src/Methods/CommentMethod.js"
+import { addComment } from "../../../src/Action/CommentMethod.js"
 import "../../../src/components/Commentlist/Comment.css"
 
 export default {
@@ -26,7 +26,6 @@ export default {
   },
   methods: {
     submitComment() {
-      console.log(this.comments)
       const newComments = addComment(this.book, this.comments, this.newComment)
       this.$emit("update-comments", newComments)
       this.newComment = ""

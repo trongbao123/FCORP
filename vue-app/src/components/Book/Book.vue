@@ -15,7 +15,7 @@
 
 <script>
 import "./Details.css"
-import { formatDate } from "@/Methods/Methods"
+import { formatDate } from "@/Action/Methods"
 import { bookData } from "@/Api/BooksData"
 import CommentList from "../../../src/components/Commentlist/CommentList.vue"
 

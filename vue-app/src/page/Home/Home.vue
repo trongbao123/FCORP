@@ -25,7 +25,7 @@
 <script>
 import "./Book.css"
 import { bookData } from "@/Api/BooksData"
-import { formatDate, truncateString } from "@/Methods/Methods"
+import { formatDate, truncateString } from "@/Action/Methods"
 import Loading from "@/components/Loading/Loading.vue"
 
 export default {

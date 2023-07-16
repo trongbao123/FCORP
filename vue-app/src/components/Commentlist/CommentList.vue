@@ -126,10 +126,11 @@
 
 <script>
 import Data from "../../../src/json/CommentData.json"
-import { isAuthor, deleteComment, addReplyComment, deleteReply, handleCancelOrEdit, saveComments } from "../../../src/Methods/CommentMethod.js"
+import { isAuthor, deleteComment, addReplyComment, deleteReply, handleCancelOrEdit, saveComments } from "../../../src/Action/CommentMethod.js"
 import CommentForm from "../../../src/components/CommentForm/CommentForm.vue"
 import "../../../src/components/Commentlist/Comment.css"
-import { formatDate } from "@/Methods/Methods"
+import { formatDate } from "@/Action/Methods"
+import { userType } from "../../../src/types/userType/userType"
 
 export default {
   name: "CommentsView",
@@ -149,7 +150,7 @@ export default {
       replyCommentId: null,
       newReplyContent: "",
       newComment: "",
-      currentUser: "Bảo"
+      currentUser: userType.currentUser
     }
   },
   methods: {
